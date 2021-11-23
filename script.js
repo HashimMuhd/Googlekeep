@@ -1,9 +1,9 @@
 
 let submit=document.querySelector(".submit");
-let title=document.getElementById("note-title");
-let desc=document.getElementById("note-text");
+let title=document.getElementById("text");
+let desc=document.getElementById("desc");
 console.log(title,desc);
-let notesElem=document.querySelector("#note")
+let notesElem=document.querySelector(".notes")
 
 submit.addEventListener("click", function (e) {
         e.preventDefault();
@@ -16,13 +16,13 @@ function addNotes() {
     card.classList.add("card");
     if(titleval){
         card.innerHTML=`
-        <h1 class="note-title">${titleval}</h1>
-          <p class="note-text">${descval}</p>
-          <button class="note-btn">Delete</button>`
+        <h1>${titleval}</h1>
+          <p>${descval}</p>
+          <button class="del">Delete</button>`
           notesElem.appendChild(card);
-          updateLs();
+          updateLs
     }
-    let clear=card.querySelector(".note-btn");
+    let clear=card.querySelector(".del");
     clear.addEventListener("click",()=>{
         card.remove();
     })
