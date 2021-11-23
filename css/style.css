@@ -67,7 +67,7 @@ form button{
     cursor: pointer;
     outline: none;
 }
-#note{
+.notes{
     background: #fff;
     width: 240px;
     border-radius: 7px;
@@ -76,35 +76,19 @@ form button{
     margin: 16px;
     float: left;
 }
-#note h1{
+.notes h1{
     font-size: 1rem;
     margin-bottom: 6px;
 }
-#note p{
+.note p{
     font-size: 1rem;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-/* .note-btn{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-    background: rgb(255, 200, 18);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    box-shadow: 0 1px 3px rgb(165, 165, 165);
-    cursor: pointer;
-    outline: none;
-} */
 
-.note-btn{
+
+.del{
     padding: 7px;
     margin-top: 5px;
     background-color: orangered;
