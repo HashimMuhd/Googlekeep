@@ -60,7 +60,7 @@
 
 // showNotes();
 
-let submit=document.querySelector("submit");
+let submit=document.querySelector(".submit");
 let title=document.getElementById("note-title");
 let desc=document.getElementById("note-text");
 console.log(title,desc);
