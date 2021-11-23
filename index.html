@@ -26,22 +26,22 @@
     </header>
   </div>
   
-  <div class="createarea">
+  <div class="container">
       <form>
-          <input type="text" id="note-title" placeholder="Title" name="title">
-          <p><textarea id="note-text" name="content" placeholder="Take a note..."></textarea></p>
+          <input type="text" id="text" placeholder="Title" name="title" autocomplete="off">
+          <p><textarea id="desc" name="content" placeholder="Take a note..." autocomplete="off"></textarea></p>
           <button class="submit" id="add-btn">Add</button>
       </form>
   </div>
 
-  <div id="note">
+  <div class="notes">
     <div class="card" style="border-color: aliceblue;">
-      <h1 class="note-title">My note</h1>
-      <p class="note-text">hey what's going on</p>
-      <button class="note-btn">Delete</button>
-      <!-- <button class="note-btn edit-btn">Edit</button> -->
+      <h1>My note</h1>
+      <p>hey what's going on</p>
+      <button class="del">Delete</button>
     </div>
   </div>
   <script src="./script.js"></script>
 </body>
 </html>
+
